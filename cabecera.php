@@ -21,7 +21,7 @@
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Venta</a></li>
                 <li><a href="#about">Entregas</a></li>
-                <li><a href="#contact">Contact</a></li>
+                
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Reportes<span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
