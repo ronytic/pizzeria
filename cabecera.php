@@ -15,11 +15,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="<?php echo $folder?>">Sistema de Ventas Pizzeria</a>
+              <a class="navbar-brand" href="<?php echo $folder?>"><div><img src="imagenes/logo.png" width="40"> <?php echo $title?></div></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Venta</a></li>
+                <li class="active"><a href="<?php echo $folder?>">Venta</a></li>
                 <li><a href="#about">Entregas</a></li>
                 
                 <li class="dropdown">
@@ -34,6 +34,7 @@
                     <li><a href="#">One more separated link</a></li>
                   </ul>
                 </li>
+                <li><a href="<?php echo $folder;?>login/logout.php">Salir del Sistema</a></li>
               </ul>
             </div>
           </div>
