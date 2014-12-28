@@ -11,7 +11,7 @@
     <meta name="author" content="Ronald Franz Nina Layme">
     <link rel="icon" href="imagenes/favicon.ico">
 
-    <title>Sistema de Pizzeria - <?php echo $titulo?></title>
+    <title><?php echo $title?> - <?php echo $titulo?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo $folder?>css/core/bootstrap.min.css" rel="stylesheet">
