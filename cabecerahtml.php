@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Ronald Franz Nina Layme">
-    <link rel="icon" href="imagenes/favicon.ico">
+    <link rel="icon" href="<?php echo $folder?>imagenes/favicon.ico">
 
     <title><?php echo $title?> - <?php echo $titulo?></title>
 
