@@ -15,23 +15,20 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="<?php echo $folder?>"><div><img src="imagenes/logo.png" width="40"> <?php echo $title?></div></a>
+              <a class="navbar-brand" href="<?php echo $folder?>./"><div><img src="<?php echo $folder?>imagenes/logo.png" width="40"> <?php echo $title?></div></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="<?php echo $folder?>">Venta</a></li>
-                <li><a href="#about">Entregas</a></li>
+                <li class="active"><a href="<?php echo $folder?>./">Venta</a></li>
+                <li><a href="<?php echo $folder?>estado/">Estado de las Ordenes</a></li>
+                <li><a href="<?php echo $folder?>reporte/">Reporte</a></li>
                 
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Reportes<span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Usuarios<span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i> Registrar Nuevo Usuario</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i> Listar Usuarios</a></li>
+
                   </ul>
                 </li>
                 <li><a href="<?php echo $folder;?>login/logout.php">Salir del Sistema</a></li>
