@@ -234,6 +234,9 @@ function mayuscula($texto){
 function minuscula($texto){
 	return mb_strtolower($texto,"utf8");
 }
+function precio($Cantidad,$decimal=2){
+	return number_format($Cantidad,$decimal);
+}
 function fecha2Str($fecha="",$t=1){
 	$fecha=$fecha==""?date("Y-m-d"):$fecha;
 	if(date("d-m-Y",strtotime($fecha))=='31-12-1969'||date("Y-m-d",strtotime($fecha))=='1969-12-31'){
