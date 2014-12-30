@@ -1,7 +1,7 @@
 <?php
 include_once("../login/check.php");
 $folder="../";
-
+$idmenu=2;
 include_once($folder."cabecerahtml.php");
 ?>
 <script language="javascript" type="text/javascript">
@@ -32,7 +32,7 @@ $(document).on("click",".cambiarestado",function(e){
 	switch(Estado){
 		case 'Eliminar':	{Archivo="eliminar.php";Mensaje="¿Esta Seguro de Eliminar esta Orden?"}break;	
 		case 'Pedido':		{Archivo="cambiar.php";Mensaje="¿Esta seguro de volver a Registrar esta Orden?"}break;		
-		case 'Preparar':	{Archivo="cambiar.php";Mensaje="¿Esta Seguro de Preparar esta Orden?"}break;	
+		case 'Preparando':	{Archivo="cambiar.php";Mensaje="¿Esta Seguro de Preparar esta Orden?"}break;	
 		case 'Listo Entrega':{Archivo="cambiar.php";Mensaje="¿Esta Seguro de que se encuenta para la Entrega la Orden?"}break;	
 		case 'Entregado':{Archivo="cambiar.php";Mensaje="¿Esta Seguro de Entregar esta Orden?"}break;	
 	}
@@ -77,7 +77,7 @@ include_once($folder."cabecera.php");
     <span class="input-group-addon">C.I.:</span>
     <input type="text" class="form-control" name="Carnet">
     <span class="input-group-addon">Fecha:</span>
-    <input class="form-control" type="date" name="FechaRegistro">
+    <input class="form-control" type="date" name="FechaRegistro" value="<?php echo date("Y-m-d")?>">
     <span class="input-group-addon">
     <button class="btn btn-xs" id="actualizar"><small>Actualizar</small></button>
     </span>
