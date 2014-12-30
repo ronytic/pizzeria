@@ -176,15 +176,15 @@ function listadotabla($titulo,$datos,$enlaces=0,$ver="",$modifica="",$elimina=""
 			}
 			if(!empty($modifica)){
 			?>
-				<a href="<?php echo $modifica;?>?Cod=<?php echo $id;?>" class="btn btn-xs btn-info modificar" title="<?php echo $idioma['Modificar']?>">
-                	<i class="icon-edit"></i>
+				<a href="<?php echo $modifica;?>?Cod=<?php echo $id;?>" class="btn btn-xs btn-info modificar" title="<?php echo 'Modificar'?>">
+                	<i class="glyphicon glyphicon-edit"></i>
                 </a>
 			<?php
 			}
 			if(!empty($elimina)){
 			?>
-				<a href="<?php echo $elimina;?>?Cod=<?php echo $id;?>" class="btn btn-xs btn-danger eliminar" title="<?php echo $idioma['Eliminar']?>">
-                	<i class="icon-trash"></i>
+				<a href="<?php echo $elimina;?>?Cod=<?php echo $id;?>" class="btn btn-xs btn-danger eliminar" title="<?php echo 'Eliminar'?>">
+                	<i class="glyphicon glyphicon-trash"></i>
                 </a>
 			<?php
 			}
