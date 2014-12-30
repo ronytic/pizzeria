@@ -1,6 +1,7 @@
 <?php
 include_once("login/check.php");
 $titulo="Venta de Productos";
+$idmenu=1;
 $folder="";
 include_once("cabecerahtml.php");
 ?>
@@ -39,7 +40,7 @@ include_once("cabecera.php");
     <input type="hidden" name="preciotamano" value="">
     <input type="hidden" name="tamano" value="">
     	<div class="row">
-        <div class="col-lg-3">
+        <div class="col-sm-3">
 			<div class="thumbnail desactivado ccgrande">
                 <h2 class="pull-left arriba"><span class="label label-danger">Grande</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">48</span></span></h2>
@@ -50,7 +51,7 @@ include_once("cabecera.php");
               
 			</div>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-3">
+        <div class="col-sm-3">
         	<div class="thumbnail desactivado ccmediana">
                 <h2 class="pull-left arriba"><span class="label label-danger">Mediana</span></h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">38</span></span></h2>
@@ -61,7 +62,7 @@ include_once("cabecera.php");
           
           	</div>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-3">
+        <div class="col-sm-3">
         	<div class="thumbnail desactivado ccpequena">
                 <h2 class="pull-left arriba"><span class="label label-danger">Pequeña</span></h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">22</span></span></h2>
@@ -73,7 +74,7 @@ include_once("cabecera.php");
 			</div>
         </div><!-- /.col-lg-4 -->
         
-        <div class="col-lg-3">
+        <div class="col-sm-3">
         	<div class="thumbnail desactivado ccporcion">
                 <h2 class="pull-left arriba"><span class="label label-danger">Porción</span></h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">6</span></span></h2>
@@ -90,7 +91,7 @@ include_once("cabecera.php");
     	<input type="hidden" name="preciosabores" value="">
     	<input type="hidden" name="sabores" value="">
     	<div class="row">
-        <div class="col-lg-2">
+        <div class="col-sm-2">
 			<div class="thumbnail desactivado cctradicional">
                 <h2 class="pull-left arriba"><span class="label label-danger">Tradicional</span>  </h2>
                 
@@ -101,7 +102,7 @@ include_once("cabecera.php");
               
 			</div>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-2">
+        <div class="col-sm-2">
         	<div class="thumbnail desactivado cchawaiana">
                 <h2 class="pull-left arriba"><span class="label label-danger">Hawaiana</span></h2>
                 
@@ -109,7 +110,7 @@ include_once("cabecera.php");
 
           	</div>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-2">
+        <div class="col-sm-2">
         	<div class="thumbnail desactivado ccamericana">
                 <h2 class="pull-left arriba"><span class="label label-danger">Americana</span></h2>
                
@@ -118,7 +119,7 @@ include_once("cabecera.php");
 			</div>
         </div><!-- /.col-lg-4 -->
         
-        <div class="col-lg-2">
+        <div class="col-sm-2">
         	<div class="thumbnail desactivado ccespanola">
                 <h2 class="pull-left arriba"><span class="label label-danger">Española</span></h2>
                 
@@ -127,7 +128,7 @@ include_once("cabecera.php");
           	</div>
         </div><!-- /.col-lg-4 -->
         
-        <div class="col-lg-2">
+        <div class="col-sm-2">
         	<div class="thumbnail desactivado cc4estaciones">
                 <h2 class="pull-left arriba"><span class="label label-danger">4 Estaciones</span></h2>
                 
@@ -136,7 +137,7 @@ include_once("cabecera.php");
           	</div>
         </div><!-- /.col-lg-4 -->
         
-        <div class="col-lg-2">
+        <div class="col-sm-2">
         	<div class="thumbnail desactivado cccarbonara">
                 <h2 class="pull-left arriba"><span class="label label-danger">Carbonara</span></h2>
                 
@@ -150,7 +151,7 @@ include_once("cabecera.php");
 		<input type="hidden" name="precioextras" value="">
     	<input type="hidden" name="extras" value="">
     	<div class="row">
-        <div class="col-lg-3">
+        <div class="col-sm-3">
 			<div class="thumbnail desactivado ccqueso">
                 <h2 class="pull-left arriba"><span class="label label-danger">Queso</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">8</span></span></h2>
@@ -158,7 +159,7 @@ include_once("cabecera.php");
 
 			</div>
         </div><!-- /.col-lg-2 -->
-        <div class="col-lg-3">
+        <div class="col-sm-3">
 			<div class="thumbnail desactivado ccjamon">
                 <h2 class="pull-left arriba"><span class="label label-danger">Jamón</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">8</span></span></h2>
@@ -167,7 +168,7 @@ include_once("cabecera.php");
 			</div>
         </div><!-- /.col-lg-2 -->
         
-        <div class="col-lg-3">
+        <div class="col-sm-3">
 			<div class="thumbnail desactivado ccaceituna">
                 <h2 class="pull-left arriba"><span class="label label-danger">Aceituna</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">8</span></span></h2>
@@ -176,7 +177,7 @@ include_once("cabecera.php");
 			</div>
         </div><!-- /.col-lg-2 -->
         
-        <div class="col-lg-3">
+        <div class="col-sm-3">
 			<div class="thumbnail desactivado ccpicante">
                 <h2 class="pull-left arriba"><span class="label label-danger">Picante</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">8</span></span></h2>
@@ -187,7 +188,7 @@ include_once("cabecera.php");
         </div><!--Fin Row-->
         
         <div class="row">
-        <div class="col-lg-3">
+        <div class="col-sm-3">
 			<div class="thumbnail desactivado cctodomucho">
                 <h2 class="pull-left arriba"><span class="label label-danger">Todo Mucho</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">12</span></span></h2>
@@ -195,7 +196,7 @@ include_once("cabecera.php");
 
 			</div>
         </div><!-- /.col-lg-2 -->
-        <div class="col-lg-3">
+        <div class="col-sm-3">
 			<div class="thumbnail desactivado cctodomedio">
                 <h2 class="pull-left arriba"><span class="label label-danger">Todo Medio</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">8</span></span></h2>
@@ -204,7 +205,7 @@ include_once("cabecera.php");
 			</div>
         </div><!-- /.col-lg-2 -->
         
-        <div class="col-lg-3">
+        <div class="col-sm-3">
 			<div class="thumbnail desactivado cctodopoco">
                 <h2 class="pull-left arriba"><span class="label label-danger">Todo Poco</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">6</span></span></h2>
@@ -213,7 +214,7 @@ include_once("cabecera.php");
 			</div>
         </div><!-- /.col-lg-2 -->
         
-        <div class="col-lg-3">
+        <div class="col-sm-3">
 			<div class="thumbnail desactivado ccninguno">
                 <h2 class="pull-left arriba"><span class="label label-danger">Ninguno</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">0</span></span></h2>
@@ -228,7 +229,7 @@ include_once("cabecera.php");
     	<input type="hidden" name="precioenvase" value="">
     	<input type="hidden" name="envase" value="">
     	<div class="row">
-        	<div class="col-lg-4">
+        	<div class="col-sm-4">
 			<div class="thumbnail desactivado ccaqui">
                 <h2 class="pull-left arriba"><span class="label label-danger">Servir 	Aquí</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">0</span></span></h2>
@@ -237,7 +238,7 @@ include_once("cabecera.php");
 			</div>
         	</div><!-- /.col-lg-2 -->
             
-            <div class="col-lg-4">
+            <div class="col-sm-4">
 			<div class="thumbnail desactivado ccllevarcaja">
                 <h2 class="pull-left arriba"><span class="label label-danger">Llevar con Caja</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">6</span></span></h2>
@@ -246,7 +247,7 @@ include_once("cabecera.php");
 			</div>
         	</div><!-- /.col-lg-2 -->
             
-            <div class="col-lg-4">
+            <div class="col-sm-4">
 			<div class="thumbnail desactivado ccllevarsincaja">
                 <h2 class="pull-left arriba"><span class="label label-danger">Llevar sin Caja</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">0</span></span></h2>
@@ -262,7 +263,7 @@ include_once("cabecera.php");
     	<input type="hidden" name="bebidas" value="">
         
     	<div class="row">
-        	<div class="col-lg-4">
+        	<div class="col-sm-4">
 			<div class="thumbnail desactivado ccpersonalcocacola">
                 <h2 class="pull-left arriba"><span class="label label-danger">Personal - Coca Cola</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">1.5</span></span></h2>
@@ -275,7 +276,7 @@ include_once("cabecera.php");
                 </div>
 			</div>
         	</div><!-- /.col-lg-2 -->
-            <div class="col-lg-4">
+            <div class="col-sm-4">
 			<div class="thumbnail desactivado ccpersonalfanta">
                 <h2 class="pull-left arriba"><span class="label label-warning">Personal - Fanta</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">1.5</span></span></h2>
@@ -288,7 +289,7 @@ include_once("cabecera.php");
                 </div>
 			</div>
         	</div><!-- /.col-lg-2 -->
-            <div class="col-lg-4">
+            <div class="col-sm-4">
 			<div class="thumbnail desactivado ccpersonalsprite">
                 <h2 class="pull-left arriba"><span class="label label-success">Personal - Sprite</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">1.5</span></span></h2>
@@ -303,7 +304,7 @@ include_once("cabecera.php");
         	</div><!-- /.col-lg-2 -->
         </div> 
         <div class="row">
-        	<div class="col-lg-4">
+        	<div class="col-sm-4">
 			<div class="thumbnail desactivado cccocacolagrande">
                 <h2 class="pull-left arriba"><span class="label label-danger">2L - Coca Cola</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">10</span></span></h2>
@@ -317,7 +318,7 @@ include_once("cabecera.php");
 			</div>
         	</div><!-- /.col-lg-2 -->
             
-            <div class="col-lg-4">
+            <div class="col-sm-4">
 			<div class="thumbnail desactivado ccfantagrande">
                 <h2 class="pull-left arriba"><span class="label label-warning">2L - Fanta</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">10</span></span></h2>
@@ -331,7 +332,7 @@ include_once("cabecera.php");
 			</div>
         	</div><!-- /.col-lg-2 -->
             
-            <div class="col-lg-4">
+            <div class="col-sm-4">
 			<div class="thumbnail desactivado ccfrutalgrande">
                 <h2 class="pull-left arriba"><span class="label label-warning">2L Frutal</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">12</span></span></h2>
