@@ -1,4 +1,6 @@
-
+<?php
+$Nivel=$_SESSION['Nivel']
+?>
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -10,7 +12,7 @@
           <div class="container" >
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
+                <span class="sr-only">Cambiar</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -19,18 +21,26 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="<?php echo $folder?>./">Venta</a></li>
-                <li><a href="<?php echo $folder?>estado/">Estado de las Ordenes</a></li>
-                <li><a href="<?php echo $folder?>reporte/">Reporte</a></li>
-                
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Usuarios<span class="caret"></span></a>
+              	<?php  if(in_array($Nivel,array(1,2,3,5))){?>
+                <li class="<?php echo $idmenu==1?'active':''?>"><a href="<?php echo $folder?>./">Venta</a></li>
+                <?php }?>
+                <?php if(in_array($Nivel,array(1,2,3,4,5))){?>
+                <li class="<?php echo $idmenu==2?'active':''?>"><a href="<?php echo $folder?>estado/">Estado de las Ordenes</a></li>
+                <?php }?>
+                <?php if(in_array($Nivel,array(1,2,3))){?>
+                <li class="<?php echo $idmenu==3?'active':''?>"><a href="<?php echo $folder?>reporte/">Reporte</a></li>
+                 <?php }?>
+                 
+                 <?php if(in_array($Nivel,array(1,2,3))){?>
+                <li class="dropdown <?php echo $idmenu==4?'active':''?>">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" >Usuarios<span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i> Registrar Nuevo Usuario</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i> Listar Usuarios</a></li>
+                    <li><a href="<?php echo $folder?>usuarios/registro/"><i class="glyphicon glyphicon-chevron-right"></i> Registrar Nuevo Usuario</a></li>
+                    <li><a href="<?php echo $folder?>usuarios/registro/listar.php"><i class="glyphicon glyphicon-chevron-right"></i> Listar Usuarios</a></li>
 
                   </ul>
                 </li>
+                 <?php }?>
                 <li><a href="<?php echo $folder;?>login/logout.php">Salir del Sistema</a></li>
               </ul>
             </div>
