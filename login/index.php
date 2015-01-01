@@ -18,7 +18,7 @@ include_once("../funciones/funciones.php");
 <body>
 <div class="container">
 
-    	<div class="col-lg-offset-4 col-lg-4">
+    	<div class="col-sm-offset-4 col-sm-4">
         <div id="formLogin" class="corner-all">
         <div class="cuerpo">
    			<img src="../imagenes/logos.jpg" width="250" />
