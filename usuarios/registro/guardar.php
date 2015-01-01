@@ -30,7 +30,7 @@ $Valores=array(
 				"Activo"=>"1"
 );
 //print_r($Valores);
-//$usuario1->insertarRegistro($Valores,0);
+$usuario1->insertarRegistro($Valores,0);
 
 $Mensajes[]=$idioma["GuardadoCorrectamente"];
 $folder="../../";
