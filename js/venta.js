@@ -44,19 +44,40 @@ $(document).on("ready",function(){
 	
 	//Sabores
 	$(".cctradicional").on("click",function(){
-		$("#csabores .activado").removeClass("activado");
-		$(".cctradicional").addClass("activado");
-		$("input[name=sabores]").val("tradicional")
+		//$("#csabores .activado").removeClass("activado");
+		if($(this).hasClass("activado")){
+			$(this).removeClass("activado");
+		}else{
+			$(this).addClass("activado");	
+		}
+		
+		
 		var costo=$(this).find(".precio").html();
 		costo=!isNaN(costo)?costo:0;
 		$("input[name=preciosabores]").val(costo);
+		dato='';
+		$("#csabores .activado").each(function(index, element) {
+           dato=dato+($(this).find("h2 span.label").html())+', ';
+        });
+		$("input[name=sabores]").val(dato)
 		sumar();
 	});
 	
 	$(".cchawaiana").on("click",function(){
-		$("#csabores .activado").removeClass("activado");
-		$(".cchawaiana").addClass("activado");
-		$("input[name=sabores]").val("hawaiana")
+		//$("#csabores .activado").removeClass("activado");
+		if($(this).hasClass("activado")){
+			$(this).removeClass("activado");
+		}else{
+			$(this).addClass("activado");	
+		}
+		
+		
+		dato='';
+		$("#csabores .activado").each(function(index, element) {
+           dato=dato+($(this).find("h2 span.label").html())+', ';
+        });
+		$("input[name=sabores]").val(dato)
+		
 		var costo=$(this).find(".precio").html();
 		costo=!isNaN(costo)?costo:0;
 		$("input[name=preciosabores]").val(costo);
@@ -64,9 +85,18 @@ $(document).on("ready",function(){
 	});
 	
 	$(".ccamericana").on("click",function(){
-		$("#csabores .activado").removeClass("activado");
-		$(".ccamericana").addClass("activado");
-		$("input[name=sabores]").val("americana")
+		//$("#csabores .activado").removeClass("activado");
+		if($(this).hasClass("activado")){
+			$(this).removeClass("activado");
+		}else{
+			$(this).addClass("activado");	
+		}
+		
+		dato='';
+		$("#csabores .activado").each(function(index, element) {
+           dato=dato+($(this).find("h2 span.label").html())+', ';
+        });
+		$("input[name=sabores]").val(dato)
 		var costo=$(this).find(".precio").html();
 		costo=!isNaN(costo)?costo:0;
 		$("input[name=preciosabores]").val(costo);
@@ -74,9 +104,18 @@ $(document).on("ready",function(){
 	});
 	
 	$(".ccespanola").on("click",function(){
-		$("#csabores .activado").removeClass("activado");
-		$(".ccespanola").addClass("activado");
-		$("input[name=sabores]").val("espanola")
+		//$("#csabores .activado").removeClass("activado");
+		if($(this).hasClass("activado")){
+			$(this).removeClass("activado");
+		}else{
+			$(this).addClass("activado");	
+		}
+		
+		dato='';
+		$("#csabores .activado").each(function(index, element) {
+           dato=dato+($(this).find("h2 span.label").html())+', ';
+        });
+		$("input[name=sabores]").val(dato)
 		var costo=$(this).find(".precio").html();
 		costo=!isNaN(costo)?costo:0;
 		$("input[name=preciosabores]").val(costo);
@@ -84,18 +123,36 @@ $(document).on("ready",function(){
 	});
 	
 	$(".cc4estaciones").on("click",function(){
-		$("#csabores .activado").removeClass("activado");
-		$(".cc4estaciones").addClass("activado");
-		$("input[name=sabores]").val("4 estaciones")
+		//$("#csabores .activado").removeClass("activado");
+		if($(this).hasClass("activado")){
+			$(this).removeClass("activado");
+		}else{
+			$(this).addClass("activado");	
+		}
+		
+		dato='';
+		$("#csabores .activado").each(function(index, element) {
+           dato=dato+($(this).find("h2 span.label").html())+', ';
+        });
+		$("input[name=sabores]").val(dato)
 		var costo=$(this).find(".precio").html();
 		costo=!isNaN(costo)?costo:0;
 		$("input[name=preciosabores]").val(costo);
 		sumar();
 	});
-	$(".cccarbonara").on("click",function(){
-		$("#csabores .activado").removeClass("activado");
-		$(".cccarbonara").addClass("activado");
-		$("input[name=sabores]").val("carbonara")
+	$(".cccarnivora").on("click",function(){
+		//$("#csabores .activado").removeClass("activado");
+		if($(this).hasClass("activado")){
+			$(this).removeClass("activado");
+		}else{
+			$(this).addClass("activado");	
+		}
+		
+		dato='';
+		$("#csabores .activado").each(function(index, element) {
+           dato=dato+($(this).find("h2 span.label").html())+', ';
+        });
+		$("input[name=sabores]").val(dato)
 		var costo=$(this).find(".precio").html();
 		costo=!isNaN(costo)?costo:0;
 		$("input[name=preciosabores]").val(costo);
