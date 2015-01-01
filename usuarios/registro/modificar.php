@@ -3,7 +3,7 @@ include_once("../../login/check.php");
 $folder="../../";
 $Cod=$_GET['Cod'];
 $titulo="NModificarDatosUsuario";
-$nivelusuario=array("2"=>"Gerente","3"=>"Administrador","4"=>"Secretaria","5"=>"Vendedor");
+$nivelusuario=array("2"=>"Gerente","3"=>"Administrador","4"=>"Cocina","5"=>"Vendedor");
 include_once("../../class/usuario.php");
 $usuario1=new usuario;
 $pac=$usuario1->mostrarRegistro($Cod);
