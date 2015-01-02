@@ -6,6 +6,6 @@ foreach($_POST as $k=>$v){
 }
 $datos=implode("&",$datos);
 $url=$datos;
-echo $url;
+//echo $url;
 ?>
 <iframe width="100%" height="700" src="reporte.php?<?php echo $url?>"></iframe>
