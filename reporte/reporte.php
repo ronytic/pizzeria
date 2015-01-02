@@ -63,6 +63,12 @@ if(count($ven)==0){
 
 	}else{
 		$total=0;
+		
+	$PrecioTamano=0;
+	$PrecioSabores=0;
+	$PrecioExtras=0;
+	$PrecioEnvase=0;
+	$PrecioBebidas=0;
     foreach($ven as $v){$i++;
 	switch($v['Estado']){
 		case 'Pedido':{$TipoEstado="label-danger";}break;
@@ -71,6 +77,12 @@ if(count($ven)==0){
 		case 'Entregado':{$TipoEstado="label-primary";}break;
 	}
 	$total+=$v['Total'];
+	
+	$PrecioTamano+=$v['PrecioTamano'];
+	$PrecioSabores+=$v['PrecioSabores'];
+	$PrecioExtras+=$v['PrecioExtras'];
+	$PrecioEnvase+=$v['PrecioEnvase'];
+	$PrecioBebidas+=$v['PrecioBebidas'];
 	
 	$datos=array($i,
 			$v['Nombres'],
@@ -209,9 +221,15 @@ if(count($ven)==0){
         
         <?php	
 	}
-	$pdf->CuadroCuerpo(175,"Total",1,"R",1);
-	$pdf->CuadroCuerpo(15,precio($total),1,"R",1);
-	
+	$pdf->Fuente("B");
+	$pdf->CuadroCuerpo(45,"Totales",1,"R",1,9,"B");
+	$pdf->CuadroCuerpo(25,precio($PrecioTamano),1,"R",1,9,"B");
+	$pdf->CuadroCuerpo(25,precio($PrecioSabores),1,"R",1,9,"B");
+	$pdf->CuadroCuerpo(30,precio($PrecioExtras),1,"R",1,9,"B");
+	$pdf->CuadroCuerpo(30,precio($PrecioEnvase),1,"R",1,9,"B");
+	$pdf->CuadroCuerpo(20,precio($PrecioBebidas),1,"R",1,9,"B");
+	$pdf->CuadroCuerpo(15,precio($total),1,"R",1,9,"B");
+	$pdf->CuadroCuerpo(55,"",1,"R",1,9,"B");
 	}
 	
 
