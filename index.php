@@ -25,8 +25,8 @@ include_once("cabecera.php");
         <hr class="separador">
       <div role="tabpanel">
           <!-- Nav tabs -->
-          <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation"  class="active" ><a href="#ctamano" aria-controls="home" role="tab" data-toggle="tab" class="btn btn-warning">Tamaño</a></li>
+          <ul class="nav nav-tabs"  role="tablist">
+            <li role="presentation"   class="active"><a href="#ctamano" aria-controls="home" role="tab" data-toggle="tab" class="btn btn-warning">Tamaño</a></li>
             <li role="presentation" ><a href="#csabores" aria-controls="profile" role="tab" data-toggle="tab" class="btn btn-warning">Sabores</a></li>
             <li role="presentation"><a href="#cextras" aria-controls="messages" role="tab" data-toggle="tab" class="btn btn-warning">Extras</a></li>
             <li role="presentation"><a href="#cenvase" aria-controls="settings" role="tab" data-toggle="tab" class="btn btn-warning">Envase</a></li>
@@ -138,10 +138,10 @@ include_once("cabecera.php");
         </div><!-- /.col-lg-4 -->
         
         <div class="col-sm-2">
-        	<div class="thumbnail desactivado cccarbonara">
-                <h2 class="pull-left arriba"><span class="label label-danger">Carbonara</span></h2>
+        	<div class="thumbnail desactivado cccarnivora">
+                <h2 class="pull-left arriba"><span class="label label-danger">Carnivora</span></h2>
                 
-          <img class="img-circle" src="imagenes/sabor/carbonara.png" alt="Carbonara" style="width: 150px; height: 150px;">
+          <img class="img-circle" src="imagenes/sabor/carnivora.jpg" alt="Carnivora" style="width: 150px; height: 150px;">
 
           	</div>
         </div><!-- /.col-lg-4 -->
