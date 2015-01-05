@@ -23,7 +23,7 @@ include_once("cabecera.php");
 		}?>
         <h3 class="pull-right">Total: Bs <span class="label label-danger total">0</span></h3>
         <hr class="separador">
-      <div role="tabpanel">
+      <div role="tabpanel" >
           <!-- Nav tabs -->
           <ul class="nav nav-tabs"  role="tablist">
             <li role="presentation"   class="active"><a href="#ctamano" aria-controls="home" role="tab" data-toggle="tab" class="btn btn-warning">Tamaño</a></li>

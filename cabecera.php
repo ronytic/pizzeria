@@ -1,6 +1,20 @@
 <?php
 $Nivel=$_SESSION['Nivel']
 ?>
+<style type="text/css">
+body{
+	background-image:url(<?php echo $folder;?>imagenes/fondo/2.jpg);
+	background-size:cover
+}
+.blanco{
+	padding-top:10px;
+	background-color:rgba(255,255,255,0.93);		
+	border-radius:10px;
+}
+.blancot{
+	background-color:rgba(255,255,255,0.88);	
+}
+</style>
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -58,4 +72,4 @@ $Nivel=$_SESSION['Nivel']
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing" style="background-color:#">
+    <div class="container marketing blanco" style="background-color:#">
