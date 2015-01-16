@@ -61,7 +61,7 @@ El Usuario fue  Actualizado Correctamente</div>
     	<h1 class="centrar"><span class="label label-success">Listado de Usuarios</span></h1>
         <fieldset>
         	<legend>Criterio de Búsqueda</legend>
-            <div class="thumbnail">
+            <div class="thumbnail blancott">
             	<div class="main row">
                 	<form action="busqueda.php" method="post" class="formulario">
                     <div class="col-sm-3">
@@ -95,7 +95,7 @@ El Usuario fue  Actualizado Correctamente</div>
         	
  
      
-    <div class="thumbnail">
+    <div class="thumbnail blancott">
 
             	<div class="main" id="respuestaformulario">
                 </div>

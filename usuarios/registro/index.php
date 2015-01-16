@@ -21,7 +21,7 @@ El Usuario fue  Registrado Correctamente</div>
 <div class="col-sm-6 col-sm-offset-3">
 <form action="guardar.php" method="post" role="form">
 
-<table class="table table-hover table-bordered">
+<table class="table table-hover table-bordered blancot">
 	<tr>
     	<td class="der"><?php echo 'Usuario' ?></td>
         <td><?php campo("Usuario","text","","form-control",1)?></td>
