@@ -8,11 +8,23 @@ body{
 }
 .blanco{
 	padding-top:10px;
-	background-color:rgba(255,255,255,0.93);		
+	background-color:rgba(150,150,155,0.60);		
 	border-radius:10px;
 }
 .blancot{
-	background-color:rgba(255,255,255,0.88);	
+	background-color:rgba(255,255,255,0.5);	
+	padding:3px 10px 0px 10px;
+	margin-bottom:5px;
+	border-radius:10px;
+}
+.transparente{
+	background-color:transparent;
+}
+.thumbnail {
+	background-color:rgba(51,51,51,1.00) !important;
+}
+.blancott{
+	background-color:rgba(255,255,255,1.00) !important;	
 }
 </style>
   </head>
