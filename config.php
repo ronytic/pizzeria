@@ -2,7 +2,8 @@
 $title="Sistema de Pizzeria";
 $siglas="";
 $directory="pizzeria";//ej:carp/ sin el "/"
-$url="http://11.1.2.31/";//ej:http:"localhost/"
+$url="http://192.168.1.22/";//ej:http:"localhost/"
+$url="http://localhost/";//ej:http:"localhost/"
 $lema2="";
 $lema='';
 
