@@ -25,7 +25,7 @@ $Nivel=$_SESSION['Nivel'];
 ?>
 <table class="table table-bordered table-striped table-hover">
 	<thead>
-    <tr>
+    <tr style="background-color:rgba(255,255,255,1.00);">
     	<th>Nº</th>
         <th>Nombre</th>
         <th>C.I.</th>
@@ -135,6 +135,20 @@ $Nivel=$_SESSION['Nivel'];
                 <td class="der"><?php echo precio($v['TotalFrutalGrande'])?></td>
             </tr>
             <?php }?>
+            <?php if($v['CantidadCafeClasico']!=0){?>
+            <tr>
+            	<td>C. Clásico</td>
+                <td class="der"><?php echo ($v['CantidadCafeClasico'])?></td>
+                <td class="der"><?php echo precio($v['TotalCafeClasico'])?></td>
+            </tr>
+            <?php }?>
+            <?php if($v['CantidadCafeCapuchino']!=0){?>
+            <tr>
+            	<td>C. Capuchino</td>
+                <td class="der"><?php echo ($v['CantidadCafeCapuchino'])?></td>
+                <td class="der"><?php echo precio($v['TotalCafeCapuchino'])?></td>
+            </tr>
+            <?php }?>
             <tr class="danger">
             	<td colspan="2">Total: </td>
                 <td class="der"><?php echo precio($v['PrecioBebidas'])?></td>	
@@ -156,16 +170,16 @@ $Nivel=$_SESSION['Nivel'];
             <?php
 			//1=admin 2=gerente 3=administrador 4=Cocina 5=vendedor
 			 if(in_array($Nivel,array(1,2,3,5))){?>
-            <a class="btn btn-default cambiarestado" id="Pedido" data-cod="<?php echo $v['CodVenta']?>">Pedido</a><br>
+            <a class="btn btn-default btn-xs  cambiarestado" id="Pedido" data-cod="<?php echo $v['CodVenta']?>">Pedido</a><br>
             <?php }?>
             <?php if(in_array($Nivel,array(1,2,3,4))){?>
-            <a class="btn btn-default cambiarestado" id="Preparando" data-cod="<?php echo $v['CodVenta']?>">Preparar</a><br>
+            <a class="btn btn-default btn-xs  cambiarestado" id="Preparando" data-cod="<?php echo $v['CodVenta']?>">Preparar</a><br>
             <?php }?>
             <?php if(in_array($Nivel,array(1,2,3,4))){?>
-            <a class="btn btn-default cambiarestado" id="Listo Entrega" data-cod="<?php echo $v['CodVenta']?>">Listo para Entregar</a><br>
+            <a class="btn btn-default btn-xs  cambiarestado" id="Listo Entrega" data-cod="<?php echo $v['CodVenta']?>">Listo para Entregar</a><br>
             <?php }?>
             <?php if(in_array($Nivel,array(1,2,3,5))){?>
-            <a class="btn btn-default cambiarestado" id="Entregado" data-cod="<?php echo $v['CodVenta']?>">Entregado</a> 
+            <a class="btn btn-default btn-xs  cambiarestado" id="Entregado" data-cod="<?php echo $v['CodVenta']?>">Entregado</a> 
             <?php }?>
             <hr class="separadorn">
             <?php if(in_array($Nivel,array(1,2,3,5))){?>
