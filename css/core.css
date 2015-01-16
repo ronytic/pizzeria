@@ -9,7 +9,7 @@ div.desactivado{
 	padding-bottom:35px;	
 }
 div.activado{
-	background-color:#FAD184;
+	background-color:orange!important;
 	border:#D80003 1px solid;
 }
 
