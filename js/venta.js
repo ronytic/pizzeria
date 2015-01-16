@@ -305,6 +305,20 @@ $(document).on("ready",function(){
 		$("input[name=totalfrutalgrande]").val(t)
 		sumarbebidas();
     });
+	$("input[name=cantidadcafeclasico]").change(function(e) {
+        var cantidad=$(this).val();
+		var precio=$(".cccafeclasico").find(".precio").html();
+		var t=cantidad*precio;
+		$("input[name=totalcafeclasico]").val(t)
+		sumarbebidas();
+    });
+	$("input[name=cantidadcafecapuchino]").change(function(e) {
+        var cantidad=$(this).val();
+		var precio=$(".cccafecapuchino").find(".precio").html();
+		var t=cantidad*precio;
+		$("input[name=totalcafecapuchino]").val(t)
+		sumarbebidas();
+    });
 });
 function sumarbebidas(){
 	var cc=parseFloat($("input[name=totalpersonalcocacola]").val());
@@ -313,7 +327,9 @@ function sumarbebidas(){
 	var ccg=parseFloat($("input[name=totalcocacolagrande]").val());
 	var ffg=parseFloat($("input[name=totalfantagrande]").val());
 	var frg=parseFloat($("input[name=totalfrutalgrande]").val());
-	$("input[name=preciobebidas]").val(cc+ff+sp+ccg+ffg+frg);
+	var ccl=parseFloat($("input[name=totalcafeclasico]").val());
+	var cch=parseFloat($("input[name=totalcafecapuchino]").val());
+	$("input[name=preciobebidas]").val(cc+ff+sp+ccg+ffg+frg+ccl+cch);
 	sumar();
 }
 function sumar(){

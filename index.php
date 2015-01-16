@@ -43,7 +43,7 @@ include_once("cabecera.php");
         <div class="col-sm-3">
 			<div class="thumbnail desactivado ccgrande">
                 <h2 class="pull-left arriba"><span class="label label-danger">Grande</span>  </h2>
-                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">48</span></span></h2>
+                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">49</span></span></h2>
               	<img class="img-circle" src="imagenes/tamano/grande.png" alt="Grande" style="width: 150px; height: 150px;">
               
               
@@ -54,7 +54,7 @@ include_once("cabecera.php");
         <div class="col-sm-3">
         	<div class="thumbnail desactivado ccmediana">
                 <h2 class="pull-left arriba"><span class="label label-danger">Mediana</span></h2>
-                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">38</span></span></h2>
+                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">39</span></span></h2>
           <img class="img-circle" src="imagenes/tamano/mediana.png" alt="Mediana" style="width: 150px; height: 150px;">
           
           
@@ -65,7 +65,7 @@ include_once("cabecera.php");
         <div class="col-sm-3">
         	<div class="thumbnail desactivado ccpequena">
                 <h2 class="pull-left arriba"><span class="label label-danger">Pequeña</span></h2>
-                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">22</span></span></h2>
+                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">29</span></span></h2>
           <img class="img-circle" src="imagenes/tamano/pequena.png" alt="Pequeña" style="width: 150px; height: 150px;">
           
           
@@ -77,7 +77,7 @@ include_once("cabecera.php");
         <div class="col-sm-3">
         	<div class="thumbnail desactivado ccporcion">
                 <h2 class="pull-left arriba"><span class="label label-danger">Porción</span></h2>
-                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">6</span></span></h2>
+                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">7</span></span></h2>
           <img class="img-circle" src="imagenes/tamano/porcion.png" alt="Porción" style="width: 150px; height: 150px;">
           
           
@@ -162,7 +162,7 @@ include_once("cabecera.php");
         <div class="col-sm-3">
 			<div class="thumbnail desactivado ccjamon">
                 <h2 class="pull-left arriba"><span class="label label-danger">Jamón</span>  </h2>
-                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">8</span></span></h2>
+                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">6</span></span></h2>
               	<img class="img-circle" src="imagenes/extra/jamon.jpg" alt="Jamón" style="width: 150px; height: 150px;">
 
 			</div>
@@ -171,7 +171,7 @@ include_once("cabecera.php");
         <div class="col-sm-3">
 			<div class="thumbnail desactivado ccaceituna">
                 <h2 class="pull-left arriba"><span class="label label-danger">Aceituna</span>  </h2>
-                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">8</span></span></h2>
+                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">2</span></span></h2>
               	<img class="img-circle" src="imagenes/extra/aceituna.jpg" alt="Aceituna" style="width: 150px; height: 150px;">
 
 			</div>
@@ -180,7 +180,7 @@ include_once("cabecera.php");
         <div class="col-sm-3">
 			<div class="thumbnail desactivado ccpicante">
                 <h2 class="pull-left arriba"><span class="label label-danger">Picante</span>  </h2>
-                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">8</span></span></h2>
+                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">2</span></span></h2>
               	<img class="img-circle" src="imagenes/extra/picante.jpg" alt="Picante" style="width: 150px; height: 150px;">
 
 			</div>
@@ -191,7 +191,7 @@ include_once("cabecera.php");
         <div class="col-sm-3">
 			<div class="thumbnail desactivado cctodomucho">
                 <h2 class="pull-left arriba"><span class="label label-danger">Todo Mucho</span>  </h2>
-                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">12</span></span></h2>
+                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">15</span></span></h2>
               	<img class="img-circle" src="imagenes/extra/todo.jpg" alt="Todo Mucho" style="width: 150px; height: 150px;">
 
 			</div>
@@ -199,7 +199,7 @@ include_once("cabecera.php");
         <div class="col-sm-3">
 			<div class="thumbnail desactivado cctodomedio">
                 <h2 class="pull-left arriba"><span class="label label-danger">Todo Medio</span>  </h2>
-                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">8</span></span></h2>
+                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">12</span></span></h2>
               	<img class="img-circle" src="imagenes/extra/todo.jpg" alt="Todo Medio" style="width: 150px; height: 150px;">
 
 			</div>
@@ -208,7 +208,7 @@ include_once("cabecera.php");
         <div class="col-sm-3">
 			<div class="thumbnail desactivado cctodopoco">
                 <h2 class="pull-left arriba"><span class="label label-danger">Todo Poco</span>  </h2>
-                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">6</span></span></h2>
+                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">8</span></span></h2>
               	<img class="img-circle" src="imagenes/extra/todo.jpg" alt="Todo Poco" style="width: 150px; height: 150px;">
 
 			</div>
@@ -263,7 +263,7 @@ include_once("cabecera.php");
     	<input type="hidden" name="bebidas" value="">
         
     	<div class="row">
-        	<div class="col-sm-4">
+        	<div class="col-sm-3">
 			<div class="thumbnail desactivado ccpersonalcocacola">
                 <h2 class="pull-left arriba"><span class="label label-danger">Personal - Coca Cola</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">1.5</span></span></h2>
@@ -276,7 +276,7 @@ include_once("cabecera.php");
                 </div>
 			</div>
         	</div><!-- /.col-lg-2 -->
-            <div class="col-sm-4">
+            <div class="col-sm-3">
 			<div class="thumbnail desactivado ccpersonalfanta">
                 <h2 class="pull-left arriba"><span class="label label-warning">Personal - Fanta</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">1.5</span></span></h2>
@@ -289,7 +289,7 @@ include_once("cabecera.php");
                 </div>
 			</div>
         	</div><!-- /.col-lg-2 -->
-            <div class="col-sm-4">
+            <div class="col-sm-3">
 			<div class="thumbnail desactivado ccpersonalsprite">
                 <h2 class="pull-left arriba"><span class="label label-success">Personal - Sprite</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">1.5</span></span></h2>
@@ -302,12 +302,25 @@ include_once("cabecera.php");
                 </div>
 			</div>
         	</div><!-- /.col-lg-2 -->
+            <div class="col-sm-3">
+                <div class="thumbnail desactivado cccafeclasico">
+                    <h2 class="pull-left arriba"><span class="label label-warning">Café Clásico</span>  </h2>
+                    <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">5</span></span></h2>
+                    <img class="img-circle" src="imagenes/bebidas/cafeclasico.jpg" alt="Cáfe Clásico" style="width: 150px; height: 150px;">
+                    <div class="input-group">
+                        <div class="input-group-addon">Cantidad</div>
+                        <input type="number" class="form-control der" placeholder="0" value="0" min="0" name="cantidadcafeclasico">
+                        <div class="input-group-addon">Total</div>
+                        <input type="number" class="form-control der resaltar" placeholder="0" value="0" min="0" readonly name="totalcafeclasico">
+                    </div>
+                </div>
+			</div><!-- /.col-lg-2 -->
         </div> 
         <div class="row">
-        	<div class="col-sm-4">
+        	<div class="col-sm-3">
 			<div class="thumbnail desactivado cccocacolagrande">
                 <h2 class="pull-left arriba"><span class="label label-danger">2L - Coca Cola</span>  </h2>
-                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">10</span></span></h2>
+                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">12</span></span></h2>
               	<img class="img-circle" src="imagenes/bebidas/cocacolagrande.jpg" alt="Llevar sin Caja" style="width: 150px; height: 150px;">
 				<div class="input-group">
 					<div class="input-group-addon">Cantidad</div>
@@ -318,10 +331,10 @@ include_once("cabecera.php");
 			</div>
         	</div><!-- /.col-lg-2 -->
             
-            <div class="col-sm-4">
+            <div class="col-sm-3">
 			<div class="thumbnail desactivado ccfantagrande">
                 <h2 class="pull-left arriba"><span class="label label-warning">2L - Fanta</span>  </h2>
-                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">10</span></span></h2>
+                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">12</span></span></h2>
               	<img class="img-circle" src="imagenes/bebidas/fantagrande.jpg" alt="Llevar sin Caja" style="width: 150px; height: 150px;">
 				<div class="input-group">
 					<div class="input-group-addon">Cantidad</div>
@@ -332,10 +345,10 @@ include_once("cabecera.php");
 			</div>
         	</div><!-- /.col-lg-2 -->
             
-            <div class="col-sm-4">
+            <div class="col-sm-3">
 			<div class="thumbnail desactivado ccfrutalgrande">
                 <h2 class="pull-left arriba"><span class="label label-warning">2L Frutal</span>  </h2>
-                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">12</span></span></h2>
+                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">10</span></span></h2>
               	<img class="img-circle" src="imagenes/bebidas/frutal.jpg" alt="Llevar sin Caja" style="width: 150px; height: 150px;">
 				<div class="input-group">
 					<div class="input-group-addon">Cantidad</div>
@@ -345,6 +358,19 @@ include_once("cabecera.php");
                 </div>
 			</div>
         	</div><!-- /.col-lg-2 -->
+            <div class="col-sm-3">
+                <div class="thumbnail desactivado cccafecapuchino">
+                    <h2 class="pull-left arriba"><span class="label label-warning">Café Capuchino</span>  </h2>
+                    <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">5</span></span></h2>
+                    <img class="img-circle" src="imagenes/bebidas/cafecapuchino.jpg" alt="Llevar sin Caja" style="width: 150px; height: 150px;">
+                    <div class="input-group">
+                        <div class="input-group-addon">Cantidad</div>
+                        <input type="number" class="form-control der" placeholder="0" value="0" min="0" name="cantidadcafecapuchino">
+                        <div class="input-group-addon">Total</div>
+                        <input type="number" class="form-control der resaltar" placeholder="0" value="0" min="0" readonly name="totalcafecapuchino">
+                    </div>
+                </div>
+			</div><!-- /.col-lg-2 -->
         </div>
     </div><!--Fin de Bebidas-->
     <div role="tabpanel" class="tab-pane  cuadro" id="cdatos">
