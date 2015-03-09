@@ -378,7 +378,22 @@ include_once("cabecera.php");
             <div class="form-group">
                 <label for="Nombres" class="col-sm-2 control-label">Nombres</label>
                 <div class="col-sm-10">
-                <input type="text" class="form-control" id="Nombres" placeholder="Nombres" name="Nombres">
+                <select class="form-control" id="Nombres" placeholder="Nombres" name="Nombres">
+				<option value="Mesa 1">Mesa 1</option>
+				<option value="Mesa 2">Mesa 2</option>
+				<option value="Mesa 3">Mesa 3</option>
+				<option value="Mesa 4">Mesa 4</option>
+				<option value="Mesa 5">Mesa 5</option>
+				<option value="Mesa 6">Mesa 6</option>
+				<option value="Mesa 7">Mesa 7</option>
+				<option value="Mesa 8">Mesa 8</option>
+				<option value="Mesa 9">Mesa 9</option>
+				<option value="Señora">Señora</option>
+				<option value="Señor">Señor</option>
+				<option value="Señorita">Señorita</option>
+				<option value="Jóven">Jóven</option>
+				
+				</select>
                 </div>
             </div>
             <div class="form-group">

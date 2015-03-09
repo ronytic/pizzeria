@@ -51,6 +51,7 @@ function mostrar(){
 	var FechaRegistro=$("input[name=FechaRegistro]").val();
 	
 	$.post("mostrar.php",{"estado":estado,"Nombres":Nombres,"Carnet":Carnet,"FechaRegistro":FechaRegistro},respuesta);
+	setTimeout("mostrar()",8000);
 }
 function respuesta(data){
 	$("#resultado").html(data);
@@ -82,7 +83,7 @@ include_once($folder."cabecera.php");
     <button class="btn btn-xs" id="actualizar"><small>Actualizar</small></button>
     </span>
     </div>
- 	<div id="resultado">
+ 	<div id="resultado" class="blancott">
     </div>
  </div>
 </div>

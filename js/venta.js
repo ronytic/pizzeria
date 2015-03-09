@@ -250,6 +250,9 @@ $(document).on("ready",function(){
 		$("input[name=envase]").val("llevar en caja")
 		var costo=$(this).find(".precio").html();
 		costo=!isNaN(costo)?costo:0;
+		if($("input[name=tamano]").val()!="grande"){
+			costo=0;
+		}
 		$("input[name=precioenvase]").val(costo);
 		sumar();
 	});

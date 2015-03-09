@@ -47,7 +47,8 @@ $Nivel=$_SESSION['Nivel'];
 		<?php
 	}else{
 		$total=0;
-    foreach($ven as $v){$i++;
+		$contar=count($ven)+1;
+    foreach($ven as $v){$contar--;
 	switch($v['Estado']){
 		case 'Pedido':{$TipoEstado="label-danger";}break;
 		case 'Preparando':{$TipoEstado="label-warning";}break;
@@ -57,7 +58,7 @@ $Nivel=$_SESSION['Nivel'];
 	$total+=$v['Total'];
 		?>
 		<tr>
-        <td><?php echo $i?></td>
+        <td><?php echo $contar?></td>
 		<td><?php echo $v['Nombres']?></td>
         <td><?php echo $v['Carnet']?></td>
         <td><?php echo capitalizar($v['Tamano'])?>
@@ -160,7 +161,7 @@ $Nivel=$_SESSION['Nivel'];
         
         </td>
         <td class="der"><h4 class="arriba"><span class="label label-danger pull-right"><?php echo $v['Total']?></span></h4></td>
-        <td><textarea class="form-control observacion" data-cod="<?php echo $v['CodVenta']?>"><?php echo $v['Observacion']?></textarea></td>
+        <td><textarea class="form-control observacion" data-cod="<?php echo $v['CodVenta']?>" rows="4"><?php echo $v['Observacion']?></textarea></td>
         <td><h4 class="arriba">
 			<span class="label <?php echo $TipoEstado?>">
 			<?php echo $v['Estado']?>
@@ -197,3 +198,6 @@ $Nivel=$_SESSION['Nivel'];
 	}
 	?>
 </table>
+<div class="reloj">
+<?php echo date("H:i:s");?>
+</div>
