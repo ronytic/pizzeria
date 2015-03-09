@@ -17,7 +17,7 @@ $(document).on("ready",function(){
 	$(".ccmediana").on("click",function(){
 		$("#ctamano .activado").removeClass("activado");
 		$(".ccmediana").addClass("activado");
-		$("input[name=tamano]").val("mediano")
+		$("input[name=tamano]").val("mediana")
 		var costo=$(this).find(".precio").html();
 		costo=!isNaN(costo)?costo:0;
 		$("input[name=preciotamano]").val(costo);
@@ -35,6 +35,24 @@ $(document).on("ready",function(){
 	$(".ccporcion").on("click",function(){
 		$("#ctamano .activado").removeClass("activado");
 		$(".ccporcion").addClass("activado");
+		$("input[name=tamano]").val("porcion")
+		var costo=$(this).find(".precio").html();
+		costo=!isNaN(costo)?costo:0;
+		$("input[name=preciotamano]").val(costo);
+		sumar();
+	});
+	$(".ccextragrande").on("click",function(){
+		$("#ctamano .activado").removeClass("activado");
+		$(".ccextragrande").addClass("activado");
+		$("input[name=tamano]").val("extra grande")
+		var costo=$(this).find(".precio").html();
+		costo=!isNaN(costo)?costo:0;
+		$("input[name=preciotamano]").val(costo);
+		sumar();
+	});
+	$(".ccpequenaeconomica").on("click",function(){
+		$("#ctamano .activado").removeClass("activado");
+		$(".ccpequenaeconomica").addClass("activado");
 		$("input[name=tamano]").val("porcion")
 		var costo=$(this).find(".precio").html();
 		costo=!isNaN(costo)?costo:0;

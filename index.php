@@ -40,7 +40,7 @@ include_once("cabecera.php");
     <input type="hidden" name="preciotamano" value="">
     <input type="hidden" name="tamano" value="">
     	<div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-4">
 			<div class="thumbnail desactivado ccgrande">
                 <h2 class="pull-left arriba"><span class="label label-danger">Grande</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">49</span></span></h2>
@@ -51,7 +51,7 @@ include_once("cabecera.php");
               
 			</div>
         </div><!-- /.col-lg-4 -->
-        <div class="col-sm-3">
+        <div class="col-sm-4">
         	<div class="thumbnail desactivado ccmediana">
                 <h2 class="pull-left arriba"><span class="label label-danger">Mediana</span></h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">39</span></span></h2>
@@ -62,7 +62,7 @@ include_once("cabecera.php");
           
           	</div>
         </div><!-- /.col-lg-4 -->
-        <div class="col-sm-3">
+        <div class="col-sm-4">
         	<div class="thumbnail desactivado ccpequena">
                 <h2 class="pull-left arriba"><span class="label label-danger">Pequeña</span></h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">29</span></span></h2>
@@ -74,7 +74,34 @@ include_once("cabecera.php");
 			</div>
         </div><!-- /.col-lg-4 -->
         
-        <div class="col-sm-3">
+        
+      </div><!-- /.row -->
+      <div class="row">
+      	<div class="col-sm-4">
+        	<div class="thumbnail desactivado ccextragrande">
+                <h2 class="pull-left arriba"><span class="label label-danger">ExtraGrande</span></h2>
+                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">80</span></span></h2>
+          <img class="img-circle" src="imagenes/tamano/extragrande.png" alt="Porción" style="width: 150px; height: 150px;">
+          
+          
+          
+          	
+          	</div>
+        </div><!-- /.col-lg-4 -->
+        
+        <div class="col-sm-4">
+        	<div class="thumbnail desactivado ccpequenaeconomica">
+                <h2 class="pull-left arriba"><span class="label label-danger">Pequeña Eco</span></h2>
+                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">22</span></span></h2>
+          <img class="img-circle" src="imagenes/tamano/pequenaeconomica.png" alt="Porción" style="width: 150px; height: 150px;">
+          
+          
+          
+          	
+          	</div>
+        </div><!-- /.col-lg-4 -->
+      
+      	<div class="col-sm-4">
         	<div class="thumbnail desactivado ccporcion">
                 <h2 class="pull-left arriba"><span class="label label-danger">Porción</span></h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">7</span></span></h2>
@@ -85,7 +112,7 @@ include_once("cabecera.php");
           	
           	</div>
         </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
+      </div>
     </div><!--Fin Tamano-->
     <div role="tabpanel" class="tab-pane  cuadro" id="csabores">
     	<input type="hidden" name="preciosabores" value="">
