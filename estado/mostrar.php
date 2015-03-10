@@ -124,7 +124,7 @@ $Nivel=$_SESSION['Nivel'];
             <?php }?>
             <?php if($v['CantidadFantaGrande']!=0){?>
             <tr>
-            	<td>G. Fanta</td>
+            	<td>CocaCola 1/2 </td>
                 <td class="der"><?php echo ($v['CantidadFantaGrande'])?></td>
                 <td class="der"><?php echo precio($v['TotalFantaGrande'])?></td>
             </tr>
@@ -138,7 +138,7 @@ $Nivel=$_SESSION['Nivel'];
             <?php }?>
             <?php if($v['CantidadCafeClasico']!=0){?>
             <tr>
-            	<td>C. Clásico</td>
+            	<td>Chocolate</td>
                 <td class="der"><?php echo ($v['CantidadCafeClasico'])?></td>
                 <td class="der"><?php echo precio($v['TotalCafeClasico'])?></td>
             </tr>

@@ -118,7 +118,7 @@ include_once("cabecera.php");
     	<input type="hidden" name="preciosabores" value="">
     	<input type="hidden" name="sabores" value="">
     	<div class="row">
-        <div class="col-sm-2">
+        <div class="col-sm-3">
 			<div class="thumbnail desactivado cctradicional">
                 <h2 class="pull-left arriba"><span class="label label-danger">Tradicional</span>  </h2>
                 
@@ -129,7 +129,7 @@ include_once("cabecera.php");
               
 			</div>
         </div><!-- /.col-lg-4 -->
-        <div class="col-sm-2">
+        <div class="col-sm-3">
         	<div class="thumbnail desactivado cchawaiana">
                 <h2 class="pull-left arriba"><span class="label label-danger">Hawaiana</span></h2>
                 
@@ -137,7 +137,7 @@ include_once("cabecera.php");
 
           	</div>
         </div><!-- /.col-lg-4 -->
-        <div class="col-sm-2">
+        <div class="col-sm-3">
         	<div class="thumbnail desactivado ccamericana">
                 <h2 class="pull-left arriba"><span class="label label-danger">Americana</span></h2>
                
@@ -146,7 +146,7 @@ include_once("cabecera.php");
 			</div>
         </div><!-- /.col-lg-4 -->
         
-        <div class="col-sm-2">
+        <div class="col-sm-3">
         	<div class="thumbnail desactivado ccespanola">
                 <h2 class="pull-left arriba"><span class="label label-danger">Española</span></h2>
                 
@@ -154,8 +154,9 @@ include_once("cabecera.php");
 
           	</div>
         </div><!-- /.col-lg-4 -->
-        
-        <div class="col-sm-2">
+        </div>
+        <div class="row">
+        <div class="col-sm-3">
         	<div class="thumbnail desactivado cc4estaciones">
                 <h2 class="pull-left arriba"><span class="label label-danger">4 Estaciones</span></h2>
                 
@@ -164,7 +165,7 @@ include_once("cabecera.php");
           	</div>
         </div><!-- /.col-lg-4 -->
         
-        <div class="col-sm-2">
+        <div class="col-sm-3">
         	<div class="thumbnail desactivado cccarnivora">
                 <h2 class="pull-left arriba"><span class="label label-danger">Carnivora</span></h2>
                 
@@ -172,6 +173,16 @@ include_once("cabecera.php");
 
           	</div>
         </div><!-- /.col-lg-4 -->
+        
+        <div class="col-sm-3">
+        	<div class="thumbnail desactivado ccpeperoni">
+                <h2 class="pull-left arriba"><span class="label label-danger">Peperoni</span></h2>
+                
+          <img class="img-circle" src="imagenes/sabor/peperoni.jpg" alt="Carnivora" style="width: 150px; height: 150px;">
+
+          	</div>
+        </div><!-- /.col-lg-4 -->
+        
       </div><!-- /.row -->
     </div><!--Fin Sabores-->
     <div role="tabpanel" class="tab-pane cuadro" id="cextras">
@@ -295,12 +306,22 @@ include_once("cabecera.php");
                 <h2 class="pull-left arriba"><span class="label label-danger">Personal - Coca Cola</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">1.5</span></span></h2>
               	<img class="img-circle" src="imagenes/bebidas/cocacola.jpg" alt="Llevar sin Caja" style="width: 150px; height: 150px;">
-                <div class="input-group">
-					<div class="input-group-addon">Cantidad</div>
-					<input type="number" class="form-control der" placeholder="0" value="0" min="0" name="cantidadpersonalcocacola">
-                    <div class="input-group-addon">Total</div>
-					<input type="number" class="form-control der resaltar" placeholder="0" value="0" min="0" readonly name="totalpersonalcocacola">
-                </div>
+                
+                <table class="table tabla">
+                	<thead>
+                        <tr>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                    	<td><input type="number" class="form-control der" placeholder="0" value="0" min="0" name="cantidadpersonalcocacola">
+                        </td>
+                        <td>
+                        	<input type="number" class="form-control der resaltar" placeholder="0" value="0" min="0" readonly name="totalpersonalcocacola">
+                        </td>
+                    </tr>
+                </table>
 			</div>
         	</div><!-- /.col-lg-2 -->
             <div class="col-sm-3">
@@ -308,12 +329,21 @@ include_once("cabecera.php");
                 <h2 class="pull-left arriba"><span class="label label-warning">Personal - Fanta</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">1.5</span></span></h2>
               	<img class="img-circle" src="imagenes/bebidas/fanta.jpg" alt="Llevar sin Caja" style="width: 150px; height: 150px;">
-				<div class="input-group">
-					<div class="input-group-addon">Cantidad</div>
-					<input type="number" class="form-control der" placeholder="0" value="0" min="0" name="cantidadpersonalfanta">
-                    <div class="input-group-addon">Total</div>
-					<input type="number" class="form-control der resaltar" placeholder="0" value="0" min="0" readonly name="totalpersonalfanta">
-                </div>
+				<table class="table tabla">
+                	<thead>
+                        <tr>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                    	<td><input type="number" class="form-control der" placeholder="0" value="0" min="0" name="cantidadpersonalfanta">
+                        </td>
+                        <td>
+                    		<input type="number" class="form-control der resaltar" placeholder="0" value="0" min="0" readonly name="totalpersonalfanta">
+                		</td>
+                    </tr>
+                </table>
 			</div>
         	</div><!-- /.col-lg-2 -->
             <div class="col-sm-3">
@@ -321,25 +351,43 @@ include_once("cabecera.php");
                 <h2 class="pull-left arriba"><span class="label label-success">Personal - Sprite</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">1.5</span></span></h2>
               	<img class="img-circle" src="imagenes/bebidas/sprite.jpg" alt="Llevar sin Caja" style="width: 150px; height: 150px;">
-				<div class="input-group">
-					<div class="input-group-addon">Cantidad</div>
-					<input type="number" class="form-control der" placeholder="0" value="0" min="0" name="cantidadpersonalsprite">
-                    <div class="input-group-addon">Total</div>
+				<table class="table tabla">
+                	<thead>
+                        <tr>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                    	<td><input type="number" class="form-control der" placeholder="0" value="0" min="0" name="cantidadpersonalsprite">
+                        </td>
+                        <td>
 					<input type="number" class="form-control der resaltar" placeholder="0" value="0" min="0" readonly name="totalpersonalsprite">
-                </div>
+                		</td>
+                    </tr>
+                </table>
 			</div>
         	</div><!-- /.col-lg-2 -->
             <div class="col-sm-3">
                 <div class="thumbnail desactivado cccafeclasico">
-                    <h2 class="pull-left arriba"><span class="label label-warning">Café Clásico</span>  </h2>
+                    <h2 class="pull-left arriba"><span class="label label-warning">Chocolate</span>  </h2>
                     <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">5</span></span></h2>
-                    <img class="img-circle" src="imagenes/bebidas/cafeclasico.jpg" alt="Cáfe Clásico" style="width: 150px; height: 150px;">
-                    <div class="input-group">
-                        <div class="input-group-addon">Cantidad</div>
-                        <input type="number" class="form-control der" placeholder="0" value="0" min="0" name="cantidadcafeclasico">
-                        <div class="input-group-addon">Total</div>
+                    <img class="img-circle" src="imagenes/bebidas/chocolate.jpg" alt="Cáfe Clásico" style="width: 150px; height: 150px;">
+                    <table class="table tabla">
+                	<thead>
+                        <tr>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                    	<td><input type="number" class="form-control der" placeholder="0" value="0" min="0" name="cantidadcafeclasico">
+                        </td>
+                        <td>
                         <input type="number" class="form-control der resaltar" placeholder="0" value="0" min="0" readonly name="totalcafeclasico">
-                    </div>
+                        </td>
+                        </tr>
+                    </table>
                 </div>
 			</div><!-- /.col-lg-2 -->
         </div> 
@@ -349,26 +397,44 @@ include_once("cabecera.php");
                 <h2 class="pull-left arriba"><span class="label label-danger">2L - Coca Cola</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">12</span></span></h2>
               	<img class="img-circle" src="imagenes/bebidas/cocacolagrande.jpg" alt="Llevar sin Caja" style="width: 150px; height: 150px;">
-				<div class="input-group">
-					<div class="input-group-addon">Cantidad</div>
-					<input type="number" class="form-control der" placeholder="0" value="0" min="0" name="cantidadcocacolagrande">
-                    <div class="input-group-addon">Total</div>
+				<table class="table tabla">
+                	<thead>
+                        <tr>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                    	<td><input type="number" class="form-control der" placeholder="0" value="0" min="0" name="cantidadcocacolagrande">
+                        </td>
+                        <td>
 					<input type="number" class="form-control der resaltar" placeholder="0" value="0" min="0" readonly name="totalcocacolagrande">
-                </div>
+                		</td>
+                        </tr>
+                    </table>
 			</div>
         	</div><!-- /.col-lg-2 -->
             
             <div class="col-sm-3">
 			<div class="thumbnail desactivado ccfantagrande">
-                <h2 class="pull-left arriba"><span class="label label-warning">2L - Fanta</span>  </h2>
-                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">12</span></span></h2>
-              	<img class="img-circle" src="imagenes/bebidas/fantagrande.jpg" alt="Llevar sin Caja" style="width: 150px; height: 150px;">
-				<div class="input-group">
-					<div class="input-group-addon">Cantidad</div>
-					<input type="number" class="form-control der" placeholder="0" value="0" min="0" name="cantidadfantagrande">
-                    <div class="input-group-addon">Total</div>
+                <h2 class="pull-left arriba"><span class="label label-danger">1/2L - Coca Cola</span>  </h2>
+                <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">8</span></span></h2>
+              	<img class="img-circle" src="imagenes/bebidas/cocacolamediana.jpg" alt="Llevar sin Caja" style="width: 150px; height: 150px;">
+				<table class="table tabla">
+                	<thead>
+                        <tr>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                    	<td><input type="number" class="form-control der" placeholder="0" value="0" min="0" name="cantidadfantagrande">
+                    	</td>
+                        <td>
 					<input type="number" class="form-control der resaltar" placeholder="0" value="0" min="0" readonly name="totalfantagrande">
-                </div>
+                		</td>
+                        </tr>
+                    </table>
 			</div>
         	</div><!-- /.col-lg-2 -->
             
@@ -377,12 +443,21 @@ include_once("cabecera.php");
                 <h2 class="pull-left arriba"><span class="label label-warning">2L Frutal</span>  </h2>
                 <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">10</span></span></h2>
               	<img class="img-circle" src="imagenes/bebidas/frutal.jpg" alt="Llevar sin Caja" style="width: 150px; height: 150px;">
-				<div class="input-group">
-					<div class="input-group-addon">Cantidad</div>
-					<input type="number" class="form-control der" placeholder="0" value="0" min="0" name="cantidadfrutalgrande">
-                    <div class="input-group-addon">Total</div>
+				<table class="table tabla">
+                	<thead>
+                        <tr>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                    	<td><input type="number" class="form-control der" placeholder="0" value="0" min="0" name="cantidadfrutalgrande">
+                    	</td>
+                        <td>
 					<input type="number" class="form-control der resaltar" placeholder="0" value="0" min="0" readonly name="totalfrutalgrande">
-                </div>
+                		</td>
+                        </tr>
+                    </table>
 			</div>
         	</div><!-- /.col-lg-2 -->
             <div class="col-sm-3">
@@ -390,12 +465,21 @@ include_once("cabecera.php");
                     <h2 class="pull-left arriba"><span class="label label-warning">Café Capuchino</span>  </h2>
                     <h2 class="pull-right arriba"><span class="label label-default">Bs <span class="precio">5</span></span></h2>
                     <img class="img-circle" src="imagenes/bebidas/cafecapuchino.jpg" alt="Llevar sin Caja" style="width: 150px; height: 150px;">
-                    <div class="input-group">
-                        <div class="input-group-addon">Cantidad</div>
-                        <input type="number" class="form-control der" placeholder="0" value="0" min="0" name="cantidadcafecapuchino">
-                        <div class="input-group-addon">Total</div>
+                    <table class="table tabla">
+                	<thead>
+                        <tr>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                    	<td><input type="number" class="form-control der" placeholder="0" value="0" min="0" name="cantidadcafecapuchino">
+                        </td>
+                        <td>
                         <input type="number" class="form-control der resaltar" placeholder="0" value="0" min="0" readonly name="totalcafecapuchino">
-                    </div>
+                    </td>
+                        </tr>
+                    </table>
                 </div>
 			</div><!-- /.col-lg-2 -->
         </div>

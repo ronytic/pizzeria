@@ -57,7 +57,7 @@ $Nivel=$_SESSION['Nivel'];
 
 $pdf->SetWidths(array(5,20,20,25,25,30,30,20,15,20,20,15));
 $pdf->Fuente("",9);
-$pdf->SetAligns(array("R","L","L","","","","","R","R","L","L","C"));
+$pdf->SetAligns(array("R","L","L","","","","","L","R","R","R","C"));
 if(count($ven)==0){
 		$pdf->CuadroCuerpo(190,"Sin Ordenes");
 
@@ -85,8 +85,8 @@ if(count($ven)==0){
 	$PrecioBebidas+=$v['PrecioBebidas'];
 	
 	$datos=array($i,
-			$v['Nombres'],
-			$v['Carnet'],
+			utf8_decode($v['Nombres']),
+			utf8_decode($v['Carnet']),
 			capitalizar($v['Tamano'])." - ".$v['PrecioTamano'],
 			capitalizar($v['Sabores'])." - ".$v['PrecioSabores'],
 			capitalizar($v['Extras'])." - ".$v['PrecioExtras'],

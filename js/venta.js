@@ -176,6 +176,25 @@ $(document).on("ready",function(){
 		$("input[name=preciosabores]").val(costo);
 		sumar();
 	});
+	$(".ccpeperoni").on("click",function(){
+		//$("#csabores .activado").removeClass("activado");
+		if($(this).hasClass("activado")){
+			$(this).removeClass("activado");
+		}else{
+			$(this).addClass("activado");	
+		}
+		
+		dato='';
+		$("#csabores .activado").each(function(index, element) {
+           dato=dato+($(this).find("h2 span.label").html())+', ';
+        });
+		$("input[name=sabores]").val(dato)
+		var costo=$(this).find(".precio").html();
+		costo=!isNaN(costo)?costo:0;
+		$("input[name=preciosabores]").val(costo);
+		sumar();
+	});
+	
 	
 	
 	//Extras
