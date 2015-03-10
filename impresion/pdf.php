@@ -19,7 +19,10 @@ include_once("fpdf_protection.php");
 	class PPDF extends FPDF_Protection{
 		var $ancho=176;
 		function Header(){
-			global $idioma;
+			global $idioma,$folder;
+			if($folder==""){
+				$folder="../";	
+			}
 			$this->SetTitle(utf8_decode("Sistema de Administración de Clinica"),true);
 			$this->SetAuthor(utf8_decode("Sistema de Administración de Clinica Desarrollado por Ronald Nina Layme. Cel: 73230568 - www.facebook.com/ronaldnina"),true);
 			$this->SetSubject(utf8_decode("Sistema de Administración de Clinica por Ronald Nina Layme. Cel: 73230568 - www.facebook.com/ronaldnina"),true);
@@ -38,7 +41,7 @@ include_once("fpdf_protection.php");
 			global $title,$gestion,$titulo,$logo,$idioma;
 			$fecha=capitalizar(strftime("%A, %d ")).$idioma['De'].capitalizar(strftime(" %B ")).$idioma['De'].strftime(" %Y");
 			
-			$this->Image("../imagenes/".$logo,10,10,20,20);
+			$this->Image($folder."imagenes/".$logo,10,10,20,20);
 			$this->Fuente("",10);
 			$this->SetXY(34,12);
 			$this->Cell(70,4,utf8_decode($title),0,0,"L");
