@@ -59,6 +59,18 @@ body{
                  
                  <?php if(in_array($Nivel,array(1,2,3))){?>
                 <li class="dropdown <?php echo $idmenu==4?'active':''?>">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" >Gastos<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="<?php echo $folder?>gastos/registro/"><i class="glyphicon glyphicon-chevron-right"></i> Registrar Gastos</a></li>
+                    <li><a href="<?php echo $folder?>gastos/registro/listar.php"><i class="glyphicon glyphicon-chevron-right"></i> Reporte de Gastos</a></li>
+                    
+
+                  </ul>
+                </li>
+                 <?php }?>
+                 
+                 <?php if(in_array($Nivel,array(1,2,3))){?>
+                <li class="dropdown <?php echo $idmenu==4?'active':''?>">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" >Usuarios<span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
                     <li><a href="<?php echo $folder?>usuarios/registro/"><i class="glyphicon glyphicon-chevron-right"></i> Registrar Nuevo Usuario</a></li>
