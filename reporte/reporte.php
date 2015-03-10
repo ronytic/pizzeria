@@ -2,6 +2,7 @@
 include_once("../login/check.php");
 include_once("../class/venta.php");
 include_once("../impresion/pdf.php");
+$folder="../";
 $titulo="Reporte de Ordenes";
 
 class PDF extends PPDF{
